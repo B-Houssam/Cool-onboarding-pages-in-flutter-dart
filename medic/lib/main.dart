@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'views/home.dart';
+import 'views/landing.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       //title: 'Flutter Demo',
-      home: Home(),
+      home: Start(),
     );
   }
 }

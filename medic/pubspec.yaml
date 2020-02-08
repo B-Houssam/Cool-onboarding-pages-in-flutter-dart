@@ -46,6 +46,7 @@ flutter:
    - assets/1.png
    - assets/2.png
    - assets/3.png
+   - assets/4.png
    - assets/Logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -63,17 +64,16 @@ flutter:
     - family: playfairBlack
       fonts: 
         - asset: fonts/PlayfairDisplay-Black.ttf
-    - family: playfairReg
+    - family: robotoReg
       fonts:
-        - asset: fonts/PlayfairDisplay-Regular.ttf
-    - family: playfair
+        - asset: fonts/Roboto-Regular.ttf
+    - family: robotoBlack
       fonts:
-        - asset: fonts/PlayfairDisplay-Medium.ttf
+        - asset: fonts/Roboto-Black.ttf
+    - family: robotoMed
+      fonts:
+        - asset: fonts/Roboto-Medium.ttf
   #         style: italic
-    - family: playfairBold
-      fonts:
-        - asset: fonts/PlayfairDisplay-Bold.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
