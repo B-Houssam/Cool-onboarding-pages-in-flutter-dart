@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:page_indicator/page_indicator.dart';
-import 'package:medic/Pages/pages.dart';
 
 import '../Pages/pages.dart';
 

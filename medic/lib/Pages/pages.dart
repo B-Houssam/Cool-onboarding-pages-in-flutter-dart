@@ -75,6 +75,8 @@ class First extends StatelessWidget {
   }
 }
 
+//-----------------------------------------------------------------------------------//
+
 class Seconde extends StatelessWidget {
   const Seconde({Key key}) : super(key: key);
 
@@ -88,34 +90,37 @@ class Seconde extends StatelessWidget {
             children: <Widget>[
               Padding(padding: EdgeInsets.symmetric(vertical: 7)),
               Padding(
-                padding: EdgeInsets.only(left: 20),
-                child: Text(
-                  "Welcome",
-                  style: TextStyle(
-                    color: Color(0XFF575A88),
-                    fontFamily: "playfairBlack",
-                    fontSize: 35,
-                  ),
-                ),
-              ),
-              Padding(padding: EdgeInsets.symmetric(vertical: 1)),
-              Padding(
-                padding: EdgeInsets.only(left: 20),
-                child: Text(
-                  "to your daily task planner",
-                  style: TextStyle(
-                    fontFamily: "robotoMed",
-                    fontWeight: FontWeight.w300,
-                    //color: Color(0XFF2F4F4F),
-                    fontSize: 20,
-                  ),
-                ),
-              ),
+                  padding: EdgeInsets.only(left: 20),
+                  child: Row(
+                    children: <Widget>[
+                      Text(
+                        "Keep track of your job",
+                        style: TextStyle(
+                          //color: Color(0XFF575A88),
+                          fontFamily: "robotoMed",
+                          fontSize: 20,
+                        ),
+                      ),
+                      Padding(padding: EdgeInsets.symmetric(horizontal: 3)),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 11),
+                        child: Text(
+                          "task.",
+                          style: TextStyle(
+                            fontFamily: "playfairBlack",
+                            //fontWeight: FontWeight.w300,
+                            color: Color(0XFF575A88),
+                            fontSize: 30,
+                          ),
+                        ),
+                      ),
+                    ],
+                  )),
               Padding(padding: EdgeInsets.symmetric(vertical: 12)),
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "This app will help you become",
+                  "We know,",
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
@@ -127,7 +132,7 @@ class Seconde extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "more effective!",
+                  "it can get really boring sometimes!",
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
@@ -165,7 +170,7 @@ class Third extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "Welcome",
+                  "Reminde",
                   style: TextStyle(
                     color: Color(0XFF575A88),
                     fontFamily: "playfairBlack",
@@ -177,7 +182,7 @@ class Third extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "to your daily task planner",
+                  "yourself to go out sometimes",
                   style: TextStyle(
                     fontFamily: "robotoMed",
                     fontWeight: FontWeight.w300,
@@ -190,7 +195,7 @@ class Third extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "This app will help you become",
+                  "fresh air with freinds and family",
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
@@ -202,7 +207,7 @@ class Third extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "more effective!",
+                  "can help you!",
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
@@ -240,7 +245,7 @@ class Fourth extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "Welcome",
+                  "A date ?",
                   style: TextStyle(
                     color: Color(0XFF575A88),
                     fontFamily: "playfairBlack",
@@ -252,7 +257,7 @@ class Fourth extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "to your daily task planner",
+                  "maybe, who knows!",
                   style: TextStyle(
                     fontFamily: "robotoMed",
                     fontWeight: FontWeight.w300,
@@ -265,7 +270,7 @@ class Fourth extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "This app will help you become",
+                  "We'll make sure you will",
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
@@ -277,7 +282,7 @@ class Fourth extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 20),
                 child: Text(
-                  "more effective!",
+                  "not forget!",
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
