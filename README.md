@@ -1,1 +1,1 @@
-# cool start screen with sliding pages in flutter dart
+# cool onboarding screens with PageView in flutter/dart
