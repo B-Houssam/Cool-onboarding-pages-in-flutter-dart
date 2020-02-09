@@ -21,6 +21,8 @@ class First extends StatelessWidget {
                     fontFamily: "playfairBlack",
                     fontSize: 35,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 1)),
@@ -31,9 +33,10 @@ class First extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoMed",
                     fontWeight: FontWeight.w300,
-                    //color: Color(0XFF2F4F4F),
                     fontSize: 20,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 12)),
@@ -44,9 +47,10 @@ class First extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
-                    //fontWeight: FontWeight.w100,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(
@@ -56,9 +60,10 @@ class First extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
-                    //fontWeight: FontWeight.w200,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
             ],
@@ -67,7 +72,7 @@ class First extends StatelessWidget {
         Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.only(bottom: 100),
+              padding: EdgeInsets.only(bottom: 100,),
               child: Image.asset("assets/3.png"),
             )),
       ],
@@ -100,6 +105,8 @@ class Seconde extends StatelessWidget {
                           fontFamily: "robotoMed",
                           fontSize: 20,
                         ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 5,
                       ),
                       Padding(padding: EdgeInsets.symmetric(horizontal: 3)),
                       Padding(
@@ -108,10 +115,11 @@ class Seconde extends StatelessWidget {
                           "task.",
                           style: TextStyle(
                             fontFamily: "playfairBlack",
-                            //fontWeight: FontWeight.w300,
                             color: Color(0XFF575A88),
                             fontSize: 30,
                           ),
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 5,
                         ),
                       ),
                     ],
@@ -124,9 +132,10 @@ class Seconde extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
-                    //fontWeight: FontWeight.w100,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(
@@ -136,9 +145,10 @@ class Seconde extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
-                    //fontWeight: FontWeight.w200,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
             ],
@@ -176,6 +186,8 @@ class Third extends StatelessWidget {
                     fontFamily: "playfairBlack",
                     fontSize: 35,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 1)),
@@ -186,9 +198,10 @@ class Third extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoMed",
                     fontWeight: FontWeight.w300,
-                    //color: Color(0XFF2F4F4F),
                     fontSize: 20,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 12)),
@@ -199,9 +212,10 @@ class Third extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
-                    //fontWeight: FontWeight.w100,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(
@@ -211,9 +225,10 @@ class Third extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "robotoReg",
                     color: Colors.grey[500],
-                    //fontWeight: FontWeight.w200,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
             ],
@@ -251,6 +266,8 @@ class Fourth extends StatelessWidget {
                     fontFamily: "playfairBlack",
                     fontSize: 35,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 1)),
@@ -260,10 +277,11 @@ class Fourth extends StatelessWidget {
                   "maybe, who knows!",
                   style: TextStyle(
                     fontFamily: "robotoMed",
-                    fontWeight: FontWeight.w300,
-                    //color: Color(0XFF2F4F4F),
+                    //fontWeight: FontWeight.w300,
                     fontSize: 20,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(padding: EdgeInsets.symmetric(vertical: 12)),
@@ -277,6 +295,8 @@ class Fourth extends StatelessWidget {
                     //fontWeight: FontWeight.w100,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
               Padding(
@@ -289,6 +309,8 @@ class Fourth extends StatelessWidget {
                     //fontWeight: FontWeight.w200,
                     fontSize: 15,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
                 ),
               ),
             ],
@@ -300,28 +322,6 @@ class Fourth extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 100),
               child: Image.asset("assets/4.png"),
             )),
-        Padding(
-          padding: EdgeInsets.only(right: 20),
-          child: Align(
-            alignment: Alignment.bottomRight,
-            child: FlatButton.icon(
-                hoverColor: Colors.transparent,
-                splashColor: Colors.transparent,
-                focusColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                textColor: Colors.grey[400],
-                padding: EdgeInsets.only(top: 20),
-                onPressed: () {},
-                icon: Icon(Icons.arrow_forward),
-                label: Text(
-                  "Next",
-                  style: TextStyle(
-                    // color: Colors.grey[300],
-                    fontFamily: "robotoReg",
-                  ),
-                )),
-          ),
-        )
       ],
     );
   }
