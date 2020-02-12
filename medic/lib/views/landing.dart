@@ -11,6 +11,7 @@ class Start extends StatefulWidget {
 
 class _StartState extends State<Start> {
   bool _visible = false;
+  bool _visible2 = true;
 
   @override
   Widget build(BuildContext context) {
@@ -21,32 +22,61 @@ class _StartState extends State<Start> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(
-                    top: 60,
-                    left: 26,
-                  ),
-                  child: Container(
-                    height: 70,
-                    width: 70,
-                    child: Image.asset("assets/Logo.png"),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.grey,
-                            blurRadius: 8,
-                            spreadRadius: 0.4,
-                            offset: Offset(6.0, 6.0)),
-                        BoxShadow(
-                            color: Colors.grey[100],
-                            blurRadius: 8,
-                            spreadRadius: 0.4,
-                            offset: Offset(-6.0, -6.0)),
-                      ],
-                      color: Colors.white,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: 60,
+                        left: 26,
+                      ),
+                      child: Container(
+                        height: 70,
+                        width: 70,
+                        child: Image.asset("assets/Logo.png"),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.grey,
+                                blurRadius: 8,
+                                spreadRadius: 0.4,
+                                offset: Offset(6.0, 6.0)),
+                            BoxShadow(
+                                color: Colors.grey[100],
+                                blurRadius: 8,
+                                spreadRadius: 0.4,
+                                offset: Offset(-6.0, -6.0)),
+                          ],
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
-                  ),
+                    Padding(
+                      padding: EdgeInsets.only(right: 15, top: 30),
+                      child: Align(
+                          alignment: Alignment.topRight,
+                          child: AnimatedOpacity(
+                            duration: Duration(milliseconds: 100),
+                            opacity: _visible2 ? 1.0 : 0.0,
+                            child: FlatButton.icon(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: Colors.grey,
+                              ),
+                              label: Text(
+                                "Skip",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              splashColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                            ),
+                          )),
+                    )
+                  ],
                 ),
                 Expanded(
                     child: Container(
@@ -84,7 +114,7 @@ class _StartState extends State<Start> {
                     opacity: _visible ? 1.0 : 0.0,
                     child: Button(),
                   )),
-            )
+            ),
           ],
         ));
   }
@@ -92,10 +122,12 @@ class _StartState extends State<Start> {
   void getP(int page) {
     setState(() {
       if (page == 3) {
+        _visible2 = !_visible2;
         _visible = !_visible;
       } else {
         if (page == 1 || page == 2 || page == 0) {
           _visible = false;
+          _visible2 = true;
         }
       }
     });
